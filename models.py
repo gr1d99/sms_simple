@@ -9,4 +9,8 @@ class MainConfiguration(models.Model):
 
 
 class AfricasTalking(MainConfiguration):
+    class Meta:
+        verbose_name_plural = "Africas Talking"
+
     username = models.CharField(max_length=255)
+    password = models.CharField(max_length=255)
