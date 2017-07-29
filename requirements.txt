@@ -2,3 +2,5 @@ AfricastalkingGateway
 django-jenkins
 coverage
 pep8
+pyflakes
+jslint
