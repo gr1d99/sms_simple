@@ -1,2 +1,3 @@
 AfricastalkingGateway
 django-jenkins
+coverage
