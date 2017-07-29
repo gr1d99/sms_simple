@@ -1,5 +1,3 @@
-import time
-
 from django.db.models.signals import pre_save
 from .models import AfricasTalking
 
@@ -12,7 +10,6 @@ def one_default(sender, instance, **kwargs):
             if obj.default is True:
                 obj.default = False
                 obj.save()
-                time.sleep(5)
 
 
 pre_save.connect(one_default, sender=AfricasTalking)
