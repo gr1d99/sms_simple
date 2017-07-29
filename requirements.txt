@@ -1,3 +1,4 @@
 AfricastalkingGateway
 django-jenkins
 coverage
+pep8
