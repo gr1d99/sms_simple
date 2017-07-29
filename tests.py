@@ -55,6 +55,6 @@ class AfricasTalkingTest(TestCase):
 
             else:
                 # the last object added default value will always be True
-                self.assertEqual(obj.default, True)
+                self.assertEqual(obj.default, False)
 
             count += 1
