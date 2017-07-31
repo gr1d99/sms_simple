@@ -51,10 +51,10 @@ class AfricasTalkingTest(TestCase):
         count = 1
         for obj in AfricasTalking.objects.all():
             if not count == total_objs:
-                self.assertEqual(obj.default, True)
+                self.assertEqual(obj.default, False)
 
             else:
                 # the last object added default value will always be True
-                self.assertEqual(obj.default, False)
+                self.assertEqual(obj.default, True)
 
             count += 1
