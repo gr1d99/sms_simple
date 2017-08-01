@@ -4,6 +4,9 @@ cd /root/PycharmProjects/django_apps/sms_simple
 pip install -r requirements.txt
 cd ..
 python manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
+
 # clean up previous results:
 rm htmlcov/*
 rm .coverage
@@ -12,7 +15,8 @@ rm .coverage
 PARMS=--omit='*migrations*'
 
 # run the tests and collect coverage, only for sms_simple app
-coverage run --source=sms_simple /root/PycharmProjects/SMS/manage.py test
+coverage run --source=sms_simple /root/PycharmProjects/django_apps/manage.py test
+python manage.py jenkins
 
 # generate plaintext and HTML report
 echo "----------------------------"
