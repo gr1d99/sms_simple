@@ -1,9 +1,5 @@
 #!/bin/bash
-source /home/virtualenvs/py27/bin/activate
-cd /root/PycharmProjects/django_apps/sms_simple
-pip install -r requirements.txt
-cd ..
-python manage.py migrate
+
 # clean up previous results:
 rm htmlcov/*
 rm .coverage
@@ -26,4 +22,3 @@ if [ "$1" == "-f" ]
 then
   firefox htmlcov/index.html
 fi
-cd /root/PycharmProjects/django_apps/sms_simple
