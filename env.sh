@@ -15,7 +15,7 @@ rm .coverage
 PARMS=--omit='*migrations*'
 
 # run the tests and collect coverage, only for sms_simple app
-coverage run --source=sms_simple /root/PycharmProjects/django_apps/manage.py test
+#coverage run --source=sms_simple /root/PycharmProjects/django_apps/manage.py test
 python manage.py jenkins
 
 # generate plaintext and HTML report
