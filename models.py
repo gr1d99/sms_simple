@@ -29,3 +29,15 @@ class AfricasTalkingTestReceivers(models.Model):
     """
     phone_number = PhoneNumberField(unique=True)
 
+    def __str__(self):
+        return '%s' % self.phone_number
+
+
+class PhoneNumbers(models.Model):
+
+    class Meta:
+        verbose_name = 'Phone Numbers'
+        verbose_name_plural = 'Phone Numbers'
+
+
+    phone_numbers = models.TextField()
